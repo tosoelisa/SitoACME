@@ -1,0 +1,351 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-48225.jpg?w=1060&t=st=1677246396~exp=1677246996~hmac=459daca4acec260a4250f171b577d52d5925e5e437289fe9a8e2fd1d289f5d01');
+  background-attachment: fixed;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px;
+}
+
+#barra {
+    background-color: rgba(204, 204, 204, 0.3);
+    padding: 1% 5% 1% 5%;
+    width: 100%;
+    color: black;
+    float: center;
+    position: fixed;
+    height: auto;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.bandiera {
+    color: black;
+    float: right;
+    width: 50px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Century gothic, Century gothic, sans-serif;
+}
+
+.titolobarra {
+ text-align: centro;
+ text-decoration: none;
+ color: white;
+ font-family: Century gothic, Century gothic, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+
+    .lingue {
+        float: none;
+        margin-bottom: 8px;
+        margin-right: 10px;
+    }
+
+    #barra {
+        text-align: center;
+        padding-left: 0%;
+    }
+}
+
+#descacme {
+    margin: 4px;
+    font-family: century gothic, century gothic, sans-serif;
+}
+
+.spazio {
+    height: 100px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.spazio1 {
+    height: 100px;
+    max-width: fit-content;
+    margin: 0 auto;
+
+}
+
+.openday {
+    font-family: centuty gothic, century gothic, sans-serif;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    margin: 0 auto;
+    border: 3.5px solid white;
+    padding: 5px;
+    max-width: 700px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.margine2 {
+    margin: 0;
+}
+
+#barraopenday {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+#banner2 {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: auto;
+    border: 3.5px solid white;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 50px;
+    font-family: centuty gothic, century gothic, sans-serif;
+}
+
+.icone {
+    font-size: 80px !important;    
+}
+
+#video {
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 20px 20px;
+    color: white;
+    height: auto;
+    border: 3.5px solid white;
+    border-radius: 50px;
+    font-family: century gothic, century gothic, sans-serif;
+
+}
+
+}
+
+#youtube {
+    width: 100%;
+    height: 315px;
+    padding: 2px;
+  border: 3.5px solid white;
+  border-radius: 50px;
+}
+
+h5 {
+  letter-spacing: 6px;
+}
+
+#offertaformativa {
+    padding: 20px;
+    color: white;
+    height: auto;
+}
+
+#colori {
+    width: 600%;
+    height: 100%;
+}
+
+#citazione {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 900px;
+    margin: 1 auto;
+    margin-top: 20px;  
+    height: auto;
+    border: 3.5px solid white;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    font-family: century gothic, century gothic, sans-serif;
+    font-size: 16pt;
+}
+
+.banner3 {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 20px;
+    height: auto;
+    border: 3.5px solid white;
+    border-radius: 50px;
+    margin: 0px -10px;
+    color: white;
+    font-family: century gothic, cntury gothic, sans-serif;
+}
+
+
+.titolidipartimenti {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+  border-radius: 100px;
+}
+
+#colorevisive {
+    background-color: #d9ffcc;
+  color: #0d3300; 
+}
+
+#coloreprogetto {
+    background-color: #cce6ff;
+    color: #00284d;
+}
+
+#colorecomunicazione {
+    background-color: #ffccf2;
+  color: #66004b;
+}
+
+.c1 {
+    color: #d9ffcc;
+}
+
+.c2 {
+    color: #cce6ff;
+}
+
+.c3 {
+    color: #ffccf2;
+}
+
+.dipartimenti {
+    padding-top: 2%;
+    min-height: 100%;
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0);
+    border-radius: 100px;
+
+}
+
+ul {
+    margin: 0 auto;
+    padding-left: 5px !important;
+    max-width: fit-content;
+    font-size: 16px;
+    list-style-type: square;
+   
+}
+
+#banner4 {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 3.5px solid white;
+    height: auto;
+    padding: 20px 20px;
+  border-radius: 50px;
+  font-family: century gothic, century gothic, sans-serif;
+}
+
+#banner5 {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 20px 20px;
+    height: auto;
+    border: 3.5px solid white;
+  border-radius: 50px;
+}
+
+.marginea {
+    margin: 40px;
+    color: #F4A460;
+}
+
+.titolia{
+  color: #F5DEB3;
+}
+
+.margineb{
+  margin: 40px;
+  color: #AFEEEE;
+}
+
+.titolib{
+  color: #E0FFFF;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+
+}
+
+.top{
+  color: white;
+  background-color: none;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  text-align:center;
+}
+
+#popup{
+  background-color: rgba(255,255,255,0.5);
+  height: 150px;
+  width: 200px;
+  bottom: -120px;
+  left: 25px;
+  position: fixed;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  padding: auto;
+  border: 3.5px solid white;
+  z-index: 1;
+  transition: trasform 700ms;
+  
+}
+
+#cookiecursor{
+  cursor: pointer;
+}
+
+#accetta{
+  background-color: #32CD32;
+  width: 70px;
+  height: 25px;
+  color: black;
+  border: 3px #32CD32;
+  border-radius: 10px;
+  margin: 5px;
+  padding: auto;
+  position: fixed;
+  bottom:-55px;
+  margin-left: 30px;
+  z-index: 2;
+  transition: trasform 700ms;
+}
+
+#rifiuta{
+  background-color: #DC143C;
+  color: black;
+  width: 70px;
+  height: 25px;
+  border: 3px #DC143C;
+  border-radius: 10px;
+  margin: 5px;
+  padding: auto;
+  position: fixed;
+  bottom:-55px;
+  margin-left: 150px;
+  z-index: 2;
+  transition: trasform 700ms;
+}
+
+#testo{
+  font-size: 18px;
+}
+
+.mappa{
+  border: 3.5px solid white;
+  border-radius: 40px;
+  width: 100%;
+  height: 330px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  min-width: 800px;
+  max-width: 1140px;
+  margin-top: 20px;
+}
+.piepagina {
+    max-width: 350px;
+  text-align: center;
+    margin: 0 auto;
+    font-size: 13px;
+}
