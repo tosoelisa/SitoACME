@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sitoACME</title>
+  
+  <meta name="author" content="Elisa Toso">
+  </head>
+  
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- google fonts icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<body>
+
+  <div class="row" id="barra">
+
+    <div>
+      <img class="bandiera" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAACTCAMAAADSiocKAAAAD1BMVEUAkGnNKj7w8fDZ6uXnsrg38qc2AAAAn0lEQVR4nO3PMREAMAgEMKD1rxkTP3GJg1SlvAn5nRK7ycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJycnJyZ3JLabCgKFGexRgAAAAAElFTkSuQmCC" alt="ita">
+      <img class="bandiera" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAACoCAMAAAAM7QF/AAAAYFBMVEXIEC7///8BIWnTQVnjh5but8D99/jYV2z43+PPMErc4er29/qAkLQJKG4HJm1wgqoiPnxNY5ZEW5DX3OezvdKirsgdOXnKFzXNJkL88fP32t/XUGbVSWD11Nnrp7Lgd4jmZKYEAAAFVklEQVR4nO2daVMbMRBEZXOTCxISyAX//1+mWGCRbWlXmuluOVXTnyhsa7Vv9HytLKWLy81iPnz8tEUma/okreQkuzO0E5+/fHhr9/z0vnDkq7OU7k/Pl9Fc3yL7dAxgvn6bmz17KBz3GckLnmUym7sbXKfGg/nxfW701+/SYSeJsj8XAvRpNJgGi6Ybs8GzGJhPg8G0WJSD0fk0FEybRbtgVD4NBNNq0T4YjU/jwDRbdABG4tMoMB0WFcAIfBoDJrPo51PpUAdD4uAebJ+GgOmzqAyG7dMAML0W1cBwfZKD6XotysA8Ng6t3dh9UoPJLOo61dSFMYvVJy2Ym7u5gXaLXsF0P+Q1Rp+UYIwWzWDan6p3Y/JJCMbwWrQPRuiTDIzptegAjM4nERiPRS9gruc/NT5pwNy6Tyu50Xb6pADjtGgSIWGaOSYwmFKn56ZcT9/P6fCJDgZ0MgkI+RjAwIZ/Qjc4FAywwGluVOQTEwzyFN7BiHzigcEO+sRrWgsGXda02zzfJxIYeMf3wPB9ooAhDPV9MHSfCGAoxTwEQ/YJD4bT3RIYqk9oMKwBXgTD9AkLhlfCChieT1AwROmrYFjFAIKhvkzUwZAODANDfmOxBIYyVFFg2G9Fl8EQyoIBw//wsgIG3wUEGMXH3VUw6EELACP5gqQBDLZAbjCir9RawEA74wQj+xK2DQxw+PrA6L62bwUDK5UHjPJCTzMYVLfsYLSXBjvAYAayGYzy4lcvGETRrGCkl0u7wQB8soJ5i2rCSi8YgE8uMLIpTv1gAD6ZwQgnxRnAwHzqBSOdRmkCA/KpE4xwoqAdDMSnLjDSqaUOMAifusBIJyO7wPh96gLT37zv5yBpuW1qTO9jVAkwlQSYSgJMJQGmkgBTSYCpJMBUEmAqCTCVBJhK0sm4lD4X7uR+YOfW+haJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSifzXGTg357gnDg2czXXcU80GHjvAVBJgKgkwlQSYSgJMJQGmkgBTSYCpJMBUctxgMD9IL6a4tkF2uxNMeemEh8f5Dr4fpJsfmS1hUM7ZVelkcWA2m8uL0qP+/J3vMGAJg2zRC2OnISqV4T/9fLtdvuiFyaJ8mIPA8HzyLqxjKyQODM0n31JMxq5CwZB8ci3eVUyTRVAwFJ8cy73ZyscAw/DJvECgtYNWMN6CUBcIdFsEWlLSfHAOGLdFuEVIy4H6ZFm21tUtOxhUabBgYAPZAwbYDRAYYKl8YHQ+dS6m7u+ME4zMp77l94vpG75uMCKfejZsgBQIAEbiU/sWH6AuIMAofGreFKYYw6DFgOH71LiNEK4sKDBsn5o2nkIeGAaG7FPLVmXFWIcqEAzVp/XN7cDFgIIh+rS2HSL4cNTtEMsxlnBlA81iXE/4aDCs7i5uuQotAQ0MZ4AvbNKLOwgZDKWY9W2di/F/DKGAIXS8thE4CrwKDHyol7eOhzStBYMu6zsY0ZdjPDDYU3gDI/s6lQkGOegTusGhYIAFnsAoL9mQwcBOJmkvSgjAgIZ/0l7GUoDBlDpdLzcBn0igALPd3rpPa2XWJn7qiQaM36dFMIzJSiIwbp8WwHCmt8nAOF+f6mBIEyKFYFw+1cDQptAqwWy3N/lEpa7yl8EQJ11rwdh9KoLhTSvWg7H6VADDnIg+AIz19Wn/TtyfLgwBY/OpBR7IonFgLD6t3PwclEUDwRh8ym5iWzQUTLdPdWQvAVo0ZRyYTp+K/5wDtWjKQDB9PhWH0WvAFk0ZCqbHp31QWdAWTRkMpt2njc6iKaPBNPsktGjKeDCNPgktmnIMYFp8+gesSQZJSUyeBAAAAABJRU5ErkJggg==" alt="eng">
+      <img class="bandiera" src="data:image/png;base64,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" alt="cin">
+    </div>
+    <div>
+      <a href="#top" class="titolobarra"> <b>ACME</b><br><i>ACCADEMIA DI BELLE ARTI</i></a>
+    </div>
+      
+    </div>
+  </div>
+
+  <main>
+
+    <div class="spazio1"></div>
+
+    <div id="barraopenday" class="openday">
+      <h3 class="margine2"><b>OPEN DAY ONLINE</b></h3>
+      <p class="margine2"><i>Tutte le informazioni per conoscere l'Accademia di Belle Arti ACME</i></p>
+    </div>
+
+    <div id="banner2" class="container mt-5">
+      <div class="row">
+        
+        <div class="col-sm">
+           <span class="icone">
+             ✍<br>
+            </span>
+            
+            <h3><br><b> OFFERTA FORMATIVA</h3>
+          
+            <p></b>Una formazione globale per i professionisti in campo artistico e nella comunicazione per immagini <br>
+            </p>
+        </div>
+        
+        <div class="col-sm">
+            <span class="icone">
+              🎓
+            </span>
+          
+          <h3><br><b>DURATA E TITOLI</b></h3>
+          
+            <p>I corsi di studio prevedono un percorso formativo distinto in più cicli <br>
+            </p>
+          </div>
+        
+        <div class="col-sm">
+          <span class="icone">
+              ✨
+            </span>
+          
+          <h3><br><b>BORSE DI STUDIO</b></h3>
+          
+            <p>Gli studenti ACME beneficiano dei contributi previsti dalla normativa e gestiti dall'Ente regionale
+              preposto <br>
+            </p>
+          </div>
+            
+       </div>
+    </div>
+
+    <div id="video" class="container mt-5">
+      
+      <div class="row">
+        
+        <div class="col-sm">
+          <h5></br>LA CREATIVITÀ È LA TUA PROFESSIONE</h5>
+          
+          <h2>WELCOME TO <b>ACME</b></h2>
+          
+          <p>Accademia di Belle Arti ACME di Novara è un'istituzione di Alta Formazione Artistica che rilascia titoli
+            accademici di I e II livello</p>
+        </div>
+        
+        <div class="col-sm">
+          <iframe id="youtube" src="https://www.youtube.com/embed/-cQk6kK7JVs" title="YouTube video player"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; clipboard-write; fullscreen;"></iframe>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    <div id="citazione" class="container mt-5">
+        <p><i>"L'obiettivo non è vivere per sempre.<br>L'obiettivo è creare qualcosa<br>che vivrà per sempre"</i><br><b></br>Chuck Palahniuk</b></br></p>
+    </div>
+  
+    <div class="container mt-5">
+      
+      <div class="banner3">
+        
+        <div id="offertaformativa" class="row">
+          
+          <div class="col-sm">
+            <h5></br></br>UN'AMPIA OFFERTA ARTISTICA</h5>
+            
+            <h2><b>OFFERTA FORMATIVA</b></h2>
+            
+            <p>3 dipartimenti, 6 scuole, 12 indirizzi
+              per una moderna e completa formazione
+              nel campo della comunicazione visiva</p>
+          </div>
+      
+        </div>
+
+        <div class="titolidipartimenti" id="colorevisive">
+          DIPARTIMENTO<br><b>ARTI VISIVE</b>
+        </div>
+        
+        <div class="row">
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c1"><b>PITTURA</b></h5>
+              INDIRIZZI
+              <ul>
+                <li>FUMETTO E VISUAL STORYTELLING</li>
+                <li>PITTURA E NUOVE PRATICHE ESPRESSIVE</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c1"><b>GRAFICA</b></h5>
+              INDIRIZZO
+              <ul>
+                <li>ILLUSTRAZIONE, EDITORIA E COMUNICAZIONE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="titolidipartimenti" id="coloreprogetto">
+          DIPARTIMENTO <br> <b>PROGETTAZIONE E ARTI APPLICATE</b>
+        </div>
+        
+        <div class="row">
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c2"><b>SCENOGRAFIA</b></h5>
+              INDIRIZZI
+              <ul>
+                <li>AMBIENTAZIONE PER INTERNI E PROGETTAZIONE DI ELEMENTI D'ARREDO</li>
+                <li>AMBIENTAZIONE PER ESTERNI E PROGETTAZIONE DEL PAESAGGIO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c2"><b>PROGETTAZIONE ARTISTICA PER L'IMPRESA</b></h5>
+              INDIRIZZI
+              <ul>
+                <li>DESIGN</li>
+                <li>FASHION DESIGN</li>
+                <li>IMMAGINE D'IMPRESA E STRATEGIE DI COMUNICAZIONE</li>
+                <li>GRAPHIC DESIGN E ART DIRECTION</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c2"><b>NUOVE TECNOLOGIE DELL'ARTE</b></h5>
+              INDIRIZZI</b></h5>
+              <ul>
+                <li>DESIGN</li>
+                <li>FASHION DESIGN</li>
+                <li>IMMAGINE D'IMPRESA E STRATEGIE DI COMUNICAZIONE</li>
+                <li>GRAPHIC DESIGN E ART DIRECTION</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="titolidipartimenti" id="colorecomunicazione">
+          DIPARTIMENTO <br> <b>COMUNICAZIONE E DIDATTICA DELL'ARTE</b>
+        </div>
+        
+        <div class="row">
+          <div class="col">
+            <div class="dipartimenti">
+              <h6> SCUOLA </h6>
+              <h5 class="c3"><b>COMUNICAZIONE E VALORIZZAZIONE<br>DEL PATRIMONIO ARTISTICO CONTEMPORANEO</b></h5>
+              INDIRIZZO
+              <ul>
+                <li>GESTIONE, VALORIZZAZIONE E TUTELA DEI BENI CULTURALI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="banner4" class="container mt-5">
+      <div class="row">
+        <h2 class="marginea"><b>DURATA E TITOLI</b></h2>
+          
+        <h4 class="titolia">DURATA DEGLI STUDI E TITOLI RILASCIATI</h4>
+        <p>I Piani di studio dell'Accademia di Belle Arti sono soprattutto caratterizzati, rispetto alle tradizionali
+            facoltà universitarie affini, dall'articolazione, con pari dignità, degli insegnamenti teorico scientifici
+            con gli insegnamenti in laboratorio, entrambi finalizzati a concorrere alla formazione globale del
+            professionista della comunicazione per immagini e, più in generale, in campo artistico.
+
+            L'ordinamento e la tipologia dei titoli di studio rilasciati dall'Accademia di Belle Arti si riferiscono a
+            corsi di studio che, nella nuova organizzazione universitaria dell'Alta Formazione Artistica e Musicale,
+            prevedono un percorso formativo distinto in due cicli:
+          </p>
+          <ul>
+            <li>
+              Il <b>primo ciclo</b>, a cui si accede con il diploma di secondo grado, ha durata triennale; permette il
+              conseguimento del titolo di primo livello.
+            </li>
+            <li>
+              Il <b>secondo ciclo - <i>biennio specialistico</i></b> - consente agli studenti in possesso del titolo di
+              primo livello o laurea con titolo affine, di completare gli studi per il conseguimento del titolo di
+              secondo livello.
+            </li>
+          </ul>
+          <p>
+            Gli insegnamenti di tutti gli indirizzi hanno alcune caratteristiche comuni: <b>sono articolati in
+              laboratori sperimentali, che caratterizzano il percorso in Accademia, tesi a sviluppare la creatività
+              individuale </b>, ed in corsi teorici/critici, propri delle facoltà universitarie, che approfondiscono i
+            fondamenti storici e teorici dell'arte, della televisione, del cinema, con attenzione verso i campi della
+            sociologia, dell'economia, dell'estetica e della storia e filosofia delle arti. <br> <br> Successivamente al
+            conseguimento del titolo di studio di secondo livello, i corsi di perfezionamento (dottorato di ricerca e
+            master) concludono il percorso scolastico.
+          </p>
+
+        </div>
+      </div>
+
+    <div id="banner5" class="container mt-5">
+      <div class="row">
+          <h2 class="margineb"><b>BORSE DI STUDIO</b></h2>
+          <h4 class="titolib">BORSE DI STUDIO ED ALTRE PROVVIDENZE</h4>
+          <p>
+            Gli studenti iscritti a questa Accademia beneficiano dei contributi e dei servizi offerti agli studenti
+            universitari previsti dalla normativa e gestiti dall'Ente regionale per il diritto allo studio universitario
+            (borse di studio, ristorazione, servizi abitativi ecc.) secondo le istruzioni indicate sulle guide
+            regionali.
+
+            Per maggiori informazioni visitate il sito: <a
+              href="https://www.edisu.piemonte.it/">www.edisu.piemonte.it</a>
+          </p>
+
+        </div>
+</div>
+</br>
+<center>
+<iframe class="mappa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.848622917563!2d8.613707815405878!3d45.45270647910078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47865a2456688117%3A0x165982cede36d96!2sAcme%20-%20Accademia%20di%20Belle%20Arti!5e0!3m2!1sit!2sit!4v1677251780087!5m2!1sit!2sit"></iframe></center>
+ 
+</main>
+
+  <footer>
+    <div class="piepagina">
+      <p class="nomargin">© Sella srl - PI 01176320032 <br> Privacy Policy (ita eng 隐私政策) | Cookie Policy (ita eng 政策)
+        <br>
+        ACME Accademia di Belle Arti Europea dei Media <br>
+        Address / 地址 Novara (Italy), via C. Porta 25
+        Tel. / 电话 (+39) 0321.627101 / 628381 - Fax / 传真 (+39) 0321.35400 <br>
+        <a href="mailto:accademia@acmenovara.it">accademia@acmenovara.it</a>
+      </p>
+    </div>
+  </footer>
+
+<div id="freccia">
+  <div onclick="scrollToTop()" class="top">
+  <i class="material-icons" style="font-size: 35px;">&#11014</i>
+   </div>
+
+    <button onclick="disappear()" id="accetta">Accetta</button>
+
+    <button onclick="disappear()" id="rifiuta">Rifiuta</button>
+
+  <div onclick="goUp()" id="popup">
+    <div id="cookiecursor">&#127850</div>
+    <span id="testo">Il sito utilizza i cookie  per migliorare la tua esperienza di navigazione</span>
+  </div>
+    
+<script src="javascript.js"></script>
+
+  
+<script src="javascript.js"></script> 
+  </body>
+</html>
