@@ -120,7 +120,7 @@ body {
 #youtube {
     width: 100%;
     height: 315px;
-    padding: 2px;
+    padding: 2px ;
   border: 3.5px solid white;
   border-radius: 50px;
 }
@@ -133,6 +133,7 @@ h5 {
     padding: 20px;
     color: white;
     height: auto;
+  text-align: center;
 }
 
 #colori {
