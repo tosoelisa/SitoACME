@@ -1,10 +1,9 @@
-body {
+.background {
   background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-48225.jpg?w=1060&t=st=1677246396~exp=1677246996~hmac=459daca4acec260a4250f171b577d52d5925e5e437289fe9a8e2fd1d289f5d01');
   background-attachment: fixed;
   background-size: cover;  
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0px;
 }
 
 #barra {
@@ -256,6 +255,9 @@ ul {
 .titolib{
   color: #E0FFFF;
 }
+.link{
+	color: white;
+}
 
 footer {
     background-color: rgba(255, 255, 255, 0.2);
@@ -340,12 +342,13 @@ footer {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  min-width: 800px;
-  max-width: 1140px;
+  min-width: auto;
+  max-width: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .piepagina {
-    max-width: 350px;
+    max-width: 100%;
   text-align: center;
     margin: 0 auto;
     font-size: 13px;
