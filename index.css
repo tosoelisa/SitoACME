@@ -1,9 +1,8 @@
 .background {
   background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-48225.jpg?w=1060&t=st=1677246396~exp=1677246996~hmac=459daca4acec260a4250f171b577d52d5925e5e437289fe9a8e2fd1d289f5d01');
-  background-attachment: fixed; 
   background-repeat: no-repeat;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  background-attachment: fixed; 
+  margin: 0px;
 }
 
 #barra {
